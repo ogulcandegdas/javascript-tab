@@ -1,6 +1,6 @@
 # javascript-tab
  js tab extension
  
- jquery required
+ jquery is used
  
 ![preview](preview.png)
