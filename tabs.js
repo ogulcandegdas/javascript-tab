@@ -20,11 +20,12 @@ css = `.tabs{
         .tab-content{
             clear: both;
         }
-        .tab-content > div{display: none;}`;
+        .tab-content > div{display: none;}
+        .tab-content > div:first-child{display: block;}`;
 
 $('head').append('<style>'+css+'</style>');
 
-$('.tabs a').click(function (e) {
+$(document).on('click', '.tabs a', function (e) {
 	e.preventDefault()
 	$('.tabs a').removeClass('active');
 	$('.tab-content > div').hide();
